@@ -5,12 +5,12 @@ This is my Active Learning Testing Repo.
 Sampling methods 
 ---------------
 1.Query by commitee 
- > vote entropy
- > average KL divergence
+ > 1. vote entropy
+ > 2. average KL divergence
 2. Uncertainty Sampling
- > least confident
- > max-margin
- > entropy
+ > 1. least confident
+ > 2. max-margin
+ > 3. entropy
 3. Random sampling
 
 
