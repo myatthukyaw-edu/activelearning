@@ -13,7 +13,7 @@ from sklearn.metrics import ConfusionMatrixDisplay
 from tensorflow.keras.callbacks import ModelCheckpoint
 #%load_ext tensorboard
 
-def train_model2( X_train_org, y_train_org,X_seedset, X_test, y_test, labels):
+def train_model2( X_train_org, y_train_org,X_seedset, X_test, y_test, labels, iterations):
 
         X_train, X_val, y_train, y_val = train_test_split( X_train_org, y_train_org, test_size=0.3, random_state=42)
         print('X_train :', X_train.shape)
@@ -53,7 +53,7 @@ def train_model2( X_train_org, y_train_org,X_seedset, X_test, y_test, labels):
 
         early_stop = EarlyStopping(monitor='val_loss', patience=2)
 
-        r = model.fit(X_train, y_train,  epochs=50, validation_data=(X_val, y_val), callbacks=[cp, tensorboard_callback])
+        r = model.fit(X_train, y_train,  epochs=50, validation_data=(X_val, y_val), verbose=0, callbacks=[cp, tensorboard_callback])
 
         plt.figure(figsize=(12, 8))
 

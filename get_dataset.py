@@ -7,8 +7,8 @@ labels = ['airplane', 'automobile', 'bird', 'cat', 'deer',
 def get_dataset():
   (X_train_full, y_train_full), (X_test, y_test) = cifar10.load_data()
   # summarize loaded dataset
-  print('Cifer Train: X=%s, y=%s' % (X_train_full.shape, y_train_full.shape))
-  print('Cifer Test: X=%s, y=%s' % (X_test.shape, y_test.shape))
+  print('Cifar Train: X=%s, y=%s' % (X_train_full.shape, y_train_full.shape))
+  print('Cifar Test: X=%s, y=%s' % (X_test.shape, y_test.shape))
   return (X_train_full, y_train_full, X_test, y_test)
 
 class Normalize(object):
