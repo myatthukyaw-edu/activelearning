@@ -2,8 +2,8 @@
 
 This is my Active Learning Testing Repo.
 
-Run al.ipynb for python notebook.
-Run al.py for pure python.
+1. Run al.ipynb for python notebook.
+2. Run al.py for pure python.
 
 Sampling methods 
 ---------------
