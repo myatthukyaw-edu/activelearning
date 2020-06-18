@@ -2,6 +2,9 @@
 
 This is my Active Learning Testing Repo.
 
+Run al.ipynb for python notebook.
+Run al.py for pure python.
+
 Sampling methods 
 ---------------
 1.Query by commitee 
